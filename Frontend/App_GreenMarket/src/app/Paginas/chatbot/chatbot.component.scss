@@ -1,0 +1,211 @@
+.messages {
+  flex: 1; /* Ocupa el espacio disponible */
+  overflow-y: auto; /* Desplazamiento vertical si es necesario */
+  margin-bottom: 10px; /* Espacio inferior */
+  padding-right: 10px; /* Espaciado interno para mejorar visibilidad */
+}
+
+.message-bubble {
+  padding: 10px; /* Espaciado interno */
+  margin: 5px 0; /* Espaciado entre mensajes */
+  border-radius: 15px; /* Bordes redondeados */
+  max-width: 80%; /* Limitar el ancho máximo de los mensajes */
+  font-size: 1rem; /* Tamaño de la fuente */
+}
+
+.user-message {
+  background-color: rgb(160, 214, 131); /* Fondo verde para mensajes del usuario */
+  color: black; /* Texto negro */
+  font-weight: bold;
+  font-size: 20px;
+  text-align: right; /* Alinear texto a la derecha */
+  margin-left: auto; /* Empujar hacia la derecha */
+}
+
+.bot-message {
+  background-color: rgb(254, 255, 159); /* Fondo negro para mensajes del bot */
+  color: #000000; /* Texto verde */
+  font-weight: bold;
+  font-size: 20px;
+  text-align: left; /* Alinear texto a la izquierda */
+  margin-right: auto; /* Empujar hacia la izquierda */
+}
+
+
+// //la fotoooooooooooo
+// /* Estilo para el contenedor */
+.image-upload {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #000000;
+}
+
+/* Ocultar el input original */
+#file-input {
+  display: none;
+  color: #000000;
+}
+
+
+.titular {
+  background-color: rgb(160, 214, 131);
+  color: black;
+  border-radius: 15px;
+  width: 300px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 60px;
+  margin: 0 auto; /* Centra el título horizontalmente */
+}
+.chat-container{
+  // max-height: 1000px;
+  background:whitesmoke;
+  // border: 1px solid rgb(160, 214, 131); /* Borde ligero */
+}
+
+/* Estilos generales */
+/* Estilos generales */
+body, html {
+  height: 100%;
+  margin: 0;
+  background: rgb(44, 47, 59);
+  background: linear-gradient(to right, rgb(38, 51, 61), rgb(50, 55, 65), rgb(33, 33, 78));
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Aseguramos que ocupe toda la altura disponible */
+  padding: 10px;
+}
+
+.card {
+  height: 100%; /* Aseguramos que la tarjeta ocupe toda la altura del contenedor */
+  border-radius: 15px !important;
+  background-color: rgba(0, 0, 0, 0.4) !important;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-header {
+  border-radius: 15px 15px 0 0 !important;
+  border-bottom: 0 !important;
+  padding: 15px 10px;
+  background-color: rgba(0, 0, 0, 0.6); /* Fondo ligeramente más oscuro para el header */
+}
+
+.card-header ion-item {
+  padding: 0;
+}
+
+.card-header ion-avatar {
+  margin-right: 10px;
+}
+
+.chatbot-logo {
+  margin-left: 10px;
+  width: 40px;
+  height: 40px;
+}
+
+.card-header ion-label h2 {
+  font-size: 35px;
+  color: rgb(0, 0, 0);
+}
+
+.card-header ion-label p {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.msg_card_body {
+  padding: 10px;
+  flex-grow: 1; /* Hace que el cuerpo del mensaje ocupe todo el espacio restante */
+  overflow-y: auto;
+}
+
+.messages {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.message {
+  margin-bottom: 10px;
+}
+
+.message ion-chip {
+  margin-bottom: 5px;
+  max-width: 75%;
+}
+
+.message ion-chip ion-label {
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+/* Estilo para el footer (input de mensaje y botones) */
+ion-footer {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 0 0 15px 15px;
+  padding: 10px;
+}
+
+ion-item {
+  padding: 0;
+}
+
+ion-input {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  color: white;
+  height: 45px;
+  padding: 0 10px;
+}
+
+ion-input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+ion-button {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+  padding: 0;
+}
+
+ion-button ion-icon {
+  color: white;
+}
+.escribir{
+  background:rgb(160, 214, 131);
+  color: black;
+  border: #000000 solid 2px;
+}
+/* Ajustes para pequeños dispositivos */
+@media(max-width: 576px) {
+  .card {
+    margin: 0 10px;
+  }
+
+  .messages {
+    padding: 5px;
+  }
+
+  ion-input {
+    font-size: 14px;
+  }
+
+  ion-button {
+    height: 35px;
+    width: 35px;
+  }
+}

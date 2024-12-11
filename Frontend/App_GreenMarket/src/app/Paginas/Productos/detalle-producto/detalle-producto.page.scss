@@ -1,0 +1,203 @@
+.centrar {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  // height: 100vh; /* O el tamaño del contenedor */
+}
+
+//Fondo de la plataforma
+.bigimage {
+  width: 100%;
+  min-height: 100vh; /* Asegura que el contenedor ocupe al menos el 100% del alto de la pantalla */
+
+  background:whitesmoke;
+  background-repeat: repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: scroll; /* Cambia a 'fixed' si quieres que el fondo esté fijo mientras el contenido se desplaza */
+  top: 0px;
+  left: 0px;
+}
+
+
+.titular {
+  background-color: rgb(160, 214, 131);
+  color: black;
+  width: 300px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 40px;
+}
+
+
+//ESTILOS DE LAS CARTAS
+
+
+.detalle-producto-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: #f8f9fa; /* Fondo claro para mejor contraste */
+}
+
+.tarjeta-detalle {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  border-radius: 12px; /* Bordes redondeados */
+  overflow: hidden; /* Asegura que la imagen quede dentro del borde */
+}
+
+.tarjeta-detalle .card-body {
+  padding: 1.5rem; /* Espaciado interno cómodo */
+}
+
+
+/* From Uiverse.io by andrew-demchenk0 */
+/* From Uiverse.io by PriyanshuGupta28 */
+.rating {
+  display: inline-block;
+}
+
+.rating input {
+  display: none;
+}
+
+.rating label {
+  float: right;
+  cursor: pointer;
+  color: #ccc;
+  transition: color 0.3s;
+}
+
+.rating label:before {
+  content: '\2605';
+  font-size: 30px;
+}
+
+.rating input:checked ~ label,
+.rating label:hover,
+.rating label:hover ~ label {
+  color: rgb(254, 255, 159);
+  transition: color 0.3s;
+}
+#texto{
+  font-weight: bold;
+  font-size: 30px;
+}
+#textod{
+  font-weight: 500;
+  font-size: 30px;
+  color: #000000;
+  font-weight: 700;
+}
+#textodd{
+  font-weight: 500;
+  font-size: 20px;
+  color: #000000;
+  font-weight: 700;
+}
+//Agregar al carrtito
+.button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  background-color: rgb(160, 214, 131);
+  border: 1px solid black;
+  overflow: hidden;
+  transition: background 0.3s, border 0.3s;
+}
+
+.button .text {
+  color:black;
+  font-weight: 600;
+  transform: translateX(30px);
+  transition: color 0.3s, transform 0.3s;
+}
+
+.button .icon {
+  position: absolute;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 39px;
+  background-color: rgb(152, 217, 117);
+  transition: width 0.3s, transform 0.3s, background-color 0.3s;
+
+  border-left:#000000 1px solid ;
+}
+
+.button svg {
+  width: 24px;
+  stroke: #000000;
+}
+
+.button:hover {
+  background-color:rgb(160, 214, 131);
+}
+
+.button:hover .text {
+  color: transparent;
+}
+
+.button:hover .icon {
+  width: 100%;
+  transform: translateX(0);
+}
+
+.button:active {
+  border-color: #2e8644;
+}
+
+.button:active .icon {
+  background-color: #2e8644;
+}
+
+//ajustes sacados de gpt
+.titular {
+  margin-bottom: 20px; /* Espacio debajo del título principal */
+}
+
+.tarjeta-detalle {
+  margin-top: 20px; /* Espacio superior para separar la tarjeta */
+  margin-bottom: 20px; /* Espacio inferior para separar la tarjeta */
+}
+
+.tarjeta-detalle .card-body {
+  padding: 2rem; /* Espaciado interno más cómodo */
+}
+
+.rating {
+  margin-bottom: 15px; /* Espacio debajo del componente de calificación */
+}
+
+#texto {
+  margin-bottom: 15px; /* Espacio debajo del título del producto */
+}
+
+#textodd {
+  margin-bottom: 15px; /* Espacio debajo de la descripción */
+}
+
+.button {
+  margin-top: 15px; /* Espacio superior para el botón */
+}
+
+@media (max-width: 768px) {
+  .card-title {
+    font-size: 18px;
+  }
+  .profile-image {
+    max-width: 100%;
+    height: auto;
+  }
+}
